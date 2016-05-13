@@ -24,6 +24,8 @@ steps:
   - name: Dl and enable features
     plugin: Shell
     command: "drush --root=/var/www/html dl features -y && drush --root=/var/www/html en features"
+  - name: Clone stanford dependencies
+    command: "git clone https://github.com/SU-SWS/stanford_image.git /var/www/html/sites/all/modules/stanford/stanford_image && git clone https://github.com/SU-SWS/stanford_image_styles.git /var/www/html/sites/all/modules/stanford/stanford_image_styles"
   - name: Enable and download dependencies
     plugin: Shell
     command: "drush --root=/var/www/html en stanford_bean_types -y"
