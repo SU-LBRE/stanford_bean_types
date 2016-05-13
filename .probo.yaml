@@ -23,13 +23,9 @@ steps:
     command: 'chown -R www-data:www-data /var/www/html/sites/default/files'
   - name: Dl and enable features
     plugin: Shell
-    command: "drush --root=/var/www/html dl features -y && drush --root=/var/www/html en features"
+    command: "drush --root=/var/www/html dl features ds bean -y && drush --root=/var/www/html en features bean_admin_ui ds_extras"
   - name: Clone stanford dependencies
     command: "git clone https://github.com/SU-SWS/stanford_image.git /var/www/html/sites/all/modules/stanford/stanford_image && git clone https://github.com/SU-SWS/stanford_image_styles.git /var/www/html/sites/all/modules/stanford/stanford_image_styles"
-  - name: Dependencies Prefetch
-    command: "drush -root/var/www/html dl ds bean -y"
-  - name: Dependencies Prefech enable
-    command: "drush --root=/var/www/html en bean_admin_ui ds_extras -y"
   - name: Enable and download dependencies
     plugin: Shell
     command: "drush --root=/var/www/html en stanford_bean_types -y"
