@@ -27,7 +27,7 @@ steps:
   - name: Clone stanford dependencies
     command: "git clone https://github.com/SU-SWS/stanford_image.git /var/www/html/sites/all/modules/stanford/stanford_image && git clone https://github.com/SU-SWS/stanford_image_styles.git /var/www/html/sites/all/modules/stanford/stanford_image_styles"
   - name: Dependencies Prefetch
-    command: "drush -root/var/www/html dl ds bean -y"
+    command: "drush -root/var/www/html dl ds bean -y && drush en bean_admin_ui ds_extras -y"
   - name: Enable and download dependencies
     plugin: Shell
     command: "drush --root=/var/www/html en stanford_bean_types -y"
