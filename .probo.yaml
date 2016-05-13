@@ -43,4 +43,4 @@ steps:
   - name: Install Behat and set up tests
     command: 'cd /srv/linky_clicky; composer install; cp -R includes/features/SU-SWS/stanford_bean_types sites/probo/features/'
   - name: Run behat tests
-    command: 'cd /srv/linky_clicky/sites/probo; /srv/linky_clicky/bin/behat features --profile default --suite dev'
+    command: 'cd /srv/linky_clicky/sites/probo; /srv/linky_clicky/bin/behat features --profile default --suite dev --tags "~@javascript"'
