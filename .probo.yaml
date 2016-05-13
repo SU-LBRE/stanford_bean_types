@@ -32,6 +32,9 @@ steps:
   - name: Revert all features
     plugin: Shell
     command: 'drush --root="/var/www/html" fra -y'
+  - name: Disable overlay
+    plugin: Shell
+    command: 'drush dis overlay -y'
   - name: Update all the things
     plugin: Shell
     command: 'drush --root="/var/www/html" updb -y'
