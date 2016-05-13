@@ -16,8 +16,8 @@ steps:
   - name: Make Module Dirs
     plugin: Shell
     command: "mkdir /var/www/html/sites/all/modules/stanford && mkdir /var/www/html/sites/all/modules/stanford/stanford_bean_types"
-  - name: Move contextual_view_modes source to contrib dir
-    command: "mv /src/* /var/www/html/sites/all/modules/contrib/stanford_bean_types/"
+  - name: Move module source to stanford dir
+    command: "mv /src/* /var/www/html/sites/all/modules/stanford/stanford_bean_types/"
   - name: Set file directory permissions
     plugin: Shell
     command: 'chown -R www-data:www-data /var/www/html/sites/default/files'
