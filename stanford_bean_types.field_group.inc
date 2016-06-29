@@ -13,6 +13,69 @@ function stanford_bean_types_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_button_card_link_style|bean|stanford_postcard|stanford_button_card';
+  $field_group->group_name = 'group_button_card_link_style';
+  $field_group->entity_type = 'bean';
+  $field_group->bundle = 'stanford_postcard';
+  $field_group->mode = 'stanford_button_card';
+  $field_group->parent_name = 'group_button_card_style';
+  $field_group->data = array(
+    'label' => 'Button Link Style',
+    'weight' => '8',
+    'children' => array(
+      0 => 'field_s_image_info',
+      1 => 'title_wrapper',
+    ),
+    'format_type' => 'link',
+    'format_settings' => array(
+      'label' => 'Button Link Style',
+      'instance_settings' => array(
+        'link_to' => 'field_s_postcard_link',
+        'custom_url' => '',
+        'custom_url_normalize' => 0,
+        'target' => 'default',
+        'classes' => 'button-card-link',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_button_card_link_style|bean|stanford_postcard|stanford_button_card'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_button_card_style|bean|stanford_postcard|stanford_button_card';
+  $field_group->group_name = 'group_button_card_style';
+  $field_group->entity_type = 'bean';
+  $field_group->bundle = 'stanford_postcard';
+  $field_group->mode = 'stanford_button_card';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Button Style',
+    'weight' => '0',
+    'children' => array(
+      0 => 'group_button_card_link_style',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Button Style',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'button-card-wrap',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_button_card_style|bean|stanford_postcard|stanford_button_card'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_first_group|bean|stanford_testimonial_block|default';
   $field_group->group_name = 'group_first_group';
   $field_group->entity_type = 'bean';
