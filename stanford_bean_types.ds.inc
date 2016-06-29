@@ -123,14 +123,12 @@ function stanford_bean_types_ds_layout_settings_info() {
         0 => 'group_button_card_style',
         1 => 'field_s_image_info',
         2 => 'title_wrapper',
-        3 => 'group_button_card_link_style',
       ),
     ),
     'fields' => array(
       'group_button_card_style' => 'ds_content',
       'field_s_image_info' => 'ds_content',
       'title_wrapper' => 'ds_content',
-      'group_button_card_link_style' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
