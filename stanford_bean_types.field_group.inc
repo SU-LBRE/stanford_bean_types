@@ -970,5 +970,39 @@ function stanford_bean_types_field_group_info() {
   );
   $export['group_second_group|bean|stanford_testimonial_block|default'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_small_card_styles|bean|stanford_postcard|stanford_small_card';
+  $field_group->group_name = 'group_small_card_styles';
+  $field_group->entity_type = 'bean';
+  $field_group->bundle = 'stanford_postcard';
+  $field_group->mode = 'stanford_small_card';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Small Card Styles',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_s_image_info',
+      1 => 'field_s_postcard_body',
+      2 => 'title_wrapper',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Small Card Styles',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'small-card',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_small_card_styles|bean|stanford_postcard|stanford_small_card'] = $field_group;
+
   return $export;
 }
