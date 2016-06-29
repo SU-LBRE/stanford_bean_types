@@ -153,6 +153,9 @@ function stanford_bean_types_strongarm() {
       'stanford_button_card' => array(
         'custom_settings' => TRUE,
       ),
+      'stanford_small_card' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -186,6 +189,10 @@ function stanford_bean_types_strongarm() {
             'visible' => TRUE,
           ),
           'stanford_button_card' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'stanford_small_card' => array(
             'weight' => '0',
             'visible' => TRUE,
           ),

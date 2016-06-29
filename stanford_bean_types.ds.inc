@@ -157,20 +157,18 @@ function stanford_bean_types_ds_layout_settings_info() {
         0 => 'group_large_card_styles',
         1 => 'title_wrapper',
         2 => 'field_s_postcard_body',
-        3 => 'group_more_link_style',
+        3 => 'field_s_postcard_link',
         4 => 'field_s_image_info',
         5 => 'group_contained_styles',
-        6 => 'field_s_postcard_link',
       ),
     ),
     'fields' => array(
       'group_large_card_styles' => 'ds_content',
       'title_wrapper' => 'ds_content',
       'field_s_postcard_body' => 'ds_content',
-      'group_more_link_style' => 'ds_content',
+      'field_s_postcard_link' => 'ds_content',
       'field_s_image_info' => 'ds_content',
       'group_contained_styles' => 'ds_content',
-      'field_s_postcard_link' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -183,6 +181,39 @@ function stanford_bean_types_ds_layout_settings_info() {
     'layout_link_custom' => '',
   );
   $export['bean|stanford_postcard|stanford_large_card'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'bean|stanford_postcard|stanford_small_card';
+  $ds_layout->entity_type = 'bean';
+  $ds_layout->bundle = 'stanford_postcard';
+  $ds_layout->view_mode = 'stanford_small_card';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'field_s_postcard_body',
+        1 => 'field_s_postcard_file',
+        2 => 'field_s_postcard_link',
+        3 => 'field_s_image_info',
+      ),
+    ),
+    'fields' => array(
+      'field_s_postcard_body' => 'ds_content',
+      'field_s_postcard_file' => 'ds_content',
+      'field_s_postcard_link' => 'ds_content',
+      'field_s_image_info' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => TRUE,
+    'layout_link_attribute' => FALSE,
+    'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
+  );
+  $export['bean|stanford_postcard|stanford_small_card'] = $ds_layout;
 
   return $export;
 }
