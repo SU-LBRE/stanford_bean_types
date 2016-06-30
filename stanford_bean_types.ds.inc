@@ -33,6 +33,36 @@ function stanford_bean_types_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'bean|stanford_postcard|no_image_card';
+  $ds_fieldsetting->entity_type = 'bean';
+  $ds_fieldsetting->bundle = 'stanford_postcard';
+  $ds_fieldsetting->view_mode = 'no_image_card';
+  $ds_fieldsetting->settings = array(
+    'title_wrapper' => array(
+      'weight' => '1',
+      'label' => 'hidden',
+      'format' => 'stanford_field_formatters',
+      'formatter_settings' => array(
+        'html_tag' => 'h2',
+        'link_field' => '',
+        'custom_link_to_entity' => 0,
+        'custom_prefix' => '',
+        'custom_suffix' => '',
+        'custom_reverse' => 0,
+        'custom_trim' => 0,
+        'custom_strtolower' => 0,
+        'custom_strtoupper' => 0,
+        'custom_ucfirst' => 0,
+        'custom_ucwords' => 0,
+        'custom_strip_tags' => 0,
+        'custom_strip_preserve' => '',
+      ),
+    ),
+  );
+  $export['bean|stanford_postcard|no_image_card'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'bean|stanford_postcard|stanford_button_card';
   $ds_fieldsetting->entity_type = 'bean';
   $ds_fieldsetting->bundle = 'stanford_postcard';

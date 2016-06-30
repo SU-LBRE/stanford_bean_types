@@ -1427,6 +1427,12 @@ function stanford_bean_types_field_default_field_instances() {
         'type' => 'field_collection_view',
         'weight' => 7,
       ),
+      'no_image_card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
       'stanford_3_col_header' => array(
         'label' => 'hidden',
         'module' => 'field_collection',
@@ -1614,6 +1620,25 @@ function stanford_bean_types_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 3,
       ),
+      'no_image_card' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'custom_link_to_entity' => '',
+          'custom_prefix' => '',
+          'custom_reverse' => '',
+          'custom_strip_preserve' => '',
+          'custom_strip_tags' => '',
+          'custom_strtolower' => '',
+          'custom_strtoupper' => '',
+          'custom_suffix' => '',
+          'custom_trim' => '',
+          'custom_ucfirst' => '',
+          'custom_ucwords' => '',
+        ),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
       'stanford_3_col_header' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -1760,6 +1785,12 @@ function stanford_bean_types_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'file_default',
+        'weight' => 4,
+      ),
+      'no_image_card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 4,
       ),
       'stanford_3_col_header' => array(
@@ -1970,6 +2001,12 @@ function stanford_bean_types_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 1,
       ),
+      'no_image_card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
       'stanford_3_col_header' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2111,6 +2148,12 @@ function stanford_bean_types_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'link_default',
+        'weight' => 5,
+      ),
+      'no_image_card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 5,
       ),
       'stanford_3_col_header' => array(

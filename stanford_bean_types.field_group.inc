@@ -107,6 +107,39 @@ function stanford_bean_types_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_no_image_card_style|bean|stanford_postcard|no_image_card';
+  $field_group->group_name = 'group_no_image_card_style';
+  $field_group->entity_type = 'bean';
+  $field_group->bundle = 'stanford_postcard';
+  $field_group->mode = 'no_image_card';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'No Image Card Style',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_s_postcard_body',
+      1 => 'title_wrapper',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'No Image Card Style',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'no-image-card',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_no_image_card_style|bean|stanford_postcard|no_image_card'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_postcard_content|bean|stanford_icon_block|default';
   $field_group->group_name = 'group_postcard_content';
   $field_group->entity_type = 'bean';
