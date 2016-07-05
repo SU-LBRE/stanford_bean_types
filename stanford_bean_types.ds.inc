@@ -31,6 +31,96 @@ function stanford_bean_types_ds_field_settings_info() {
   );
   $export['bean|stanford_icon_block|default'] = $ds_fieldsetting;
 
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'bean|stanford_postcard|no_image_card';
+  $ds_fieldsetting->entity_type = 'bean';
+  $ds_fieldsetting->bundle = 'stanford_postcard';
+  $ds_fieldsetting->view_mode = 'no_image_card';
+  $ds_fieldsetting->settings = array(
+    'title_wrapper' => array(
+      'weight' => '1',
+      'label' => 'hidden',
+      'format' => 'stanford_field_formatters',
+      'formatter_settings' => array(
+        'html_tag' => 'h2',
+        'link_field' => '',
+        'custom_link_to_entity' => 0,
+        'custom_prefix' => '',
+        'custom_suffix' => '',
+        'custom_reverse' => 0,
+        'custom_trim' => 0,
+        'custom_strtolower' => 0,
+        'custom_strtoupper' => 0,
+        'custom_ucfirst' => 0,
+        'custom_ucwords' => 0,
+        'custom_strip_tags' => 0,
+        'custom_strip_preserve' => '',
+      ),
+    ),
+  );
+  $export['bean|stanford_postcard|no_image_card'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'bean|stanford_postcard|stanford_button_card';
+  $ds_fieldsetting->entity_type = 'bean';
+  $ds_fieldsetting->bundle = 'stanford_postcard';
+  $ds_fieldsetting->view_mode = 'stanford_button_card';
+  $ds_fieldsetting->settings = array(
+    'title_wrapper' => array(
+      'weight' => '2',
+      'label' => 'hidden',
+      'format' => 'stanford_field_formatters',
+      'formatter_settings' => array(
+        'html_tag' => '',
+        'link_field' => '',
+        'custom_link_to_entity' => 0,
+        'custom_prefix' => '',
+        'custom_suffix' => '',
+        'custom_reverse' => 0,
+        'custom_trim' => 0,
+        'custom_strtolower' => 0,
+        'custom_strtoupper' => 0,
+        'custom_ucfirst' => 0,
+        'custom_ucwords' => 0,
+        'custom_strip_tags' => 0,
+        'custom_strip_preserve' => '',
+      ),
+    ),
+  );
+  $export['bean|stanford_postcard|stanford_button_card'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'bean|stanford_postcard|stanford_small_card';
+  $ds_fieldsetting->entity_type = 'bean';
+  $ds_fieldsetting->bundle = 'stanford_postcard';
+  $ds_fieldsetting->view_mode = 'stanford_small_card';
+  $ds_fieldsetting->settings = array(
+    'title_wrapper' => array(
+      'weight' => '2',
+      'label' => 'hidden',
+      'format' => 'stanford_field_formatters',
+      'formatter_settings' => array(
+        'html_tag' => 'h2',
+        'link_field' => '',
+        'custom_link_to_entity' => 0,
+        'custom_prefix' => '',
+        'custom_suffix' => '',
+        'custom_reverse' => 0,
+        'custom_trim' => 0,
+        'custom_strtolower' => 0,
+        'custom_strtoupper' => 0,
+        'custom_ucfirst' => 0,
+        'custom_ucwords' => 0,
+        'custom_strip_tags' => 0,
+        'custom_strip_preserve' => '',
+      ),
+    ),
+  );
+  $export['bean|stanford_postcard|stanford_small_card'] = $ds_fieldsetting;
+
   return $export;
 }
 
@@ -80,6 +170,142 @@ function stanford_bean_types_ds_layout_settings_info() {
   );
   $export['bean|stanford_icon_block|default'] = $ds_layout;
 
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'bean|stanford_postcard|no_image_card';
+  $ds_layout->entity_type = 'bean';
+  $ds_layout->bundle = 'stanford_postcard';
+  $ds_layout->view_mode = 'no_image_card';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'group_no_image_card_style',
+        1 => 'title_wrapper',
+        2 => 'field_s_postcard_body',
+      ),
+    ),
+    'fields' => array(
+      'group_no_image_card_style' => 'ds_content',
+      'title_wrapper' => 'ds_content',
+      'field_s_postcard_body' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['bean|stanford_postcard|no_image_card'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'bean|stanford_postcard|stanford_button_card';
+  $ds_layout->entity_type = 'bean';
+  $ds_layout->bundle = 'stanford_postcard';
+  $ds_layout->view_mode = 'stanford_button_card';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'group_button_card_style',
+        1 => 'field_s_image_info',
+        2 => 'title_wrapper',
+      ),
+    ),
+    'fields' => array(
+      'group_button_card_style' => 'ds_content',
+      'field_s_image_info' => 'ds_content',
+      'title_wrapper' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['bean|stanford_postcard|stanford_button_card'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'bean|stanford_postcard|stanford_large_card';
+  $ds_layout->entity_type = 'bean';
+  $ds_layout->bundle = 'stanford_postcard';
+  $ds_layout->view_mode = 'stanford_large_card';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'group_large_card_styles',
+        1 => 'title_wrapper',
+        2 => 'field_s_postcard_body',
+        3 => 'field_s_postcard_link',
+        4 => 'field_s_image_info',
+        5 => 'group_contained_styles',
+      ),
+    ),
+    'fields' => array(
+      'group_large_card_styles' => 'ds_content',
+      'title_wrapper' => 'ds_content',
+      'field_s_postcard_body' => 'ds_content',
+      'field_s_postcard_link' => 'ds_content',
+      'field_s_image_info' => 'ds_content',
+      'group_contained_styles' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 0,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['bean|stanford_postcard|stanford_large_card'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'bean|stanford_postcard|stanford_small_card';
+  $ds_layout->entity_type = 'bean';
+  $ds_layout->bundle = 'stanford_postcard';
+  $ds_layout->view_mode = 'stanford_small_card';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'group_small_card_styles',
+        1 => 'field_s_image_info',
+        2 => 'title_wrapper',
+        3 => 'field_s_postcard_body',
+      ),
+    ),
+    'fields' => array(
+      'group_small_card_styles' => 'ds_content',
+      'field_s_image_info' => 'ds_content',
+      'title_wrapper' => 'ds_content',
+      'field_s_postcard_body' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['bean|stanford_postcard|stanford_small_card'] = $ds_layout;
+
   return $export;
 }
 
@@ -88,6 +314,16 @@ function stanford_bean_types_ds_layout_settings_info() {
  */
 function stanford_bean_types_ds_view_modes_info() {
   $export = array();
+
+  $ds_view_mode = new stdClass();
+  $ds_view_mode->api_version = 1;
+  $ds_view_mode->view_mode = 'no_image_card';
+  $ds_view_mode->label = 'No Image Card';
+  $ds_view_mode->entities = array(
+    'bean' => 'bean',
+    'field_collection_item' => 'field_collection_item',
+  );
+  $export['no_image_card'] = $ds_view_mode;
 
   $ds_view_mode = new stdClass();
   $ds_view_mode->api_version = 1;
