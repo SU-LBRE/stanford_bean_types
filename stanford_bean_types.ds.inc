@@ -317,6 +317,16 @@ function stanford_bean_types_ds_view_modes_info() {
 
   $ds_view_mode = new stdClass();
   $ds_view_mode->api_version = 1;
+  $ds_view_mode->view_mode = 'no_image_card';
+  $ds_view_mode->label = 'No Image Card';
+  $ds_view_mode->entities = array(
+  'bean' => 'bean',
+  'field_collection_item' => 'field_collection_item',
+  );
+  $export['no_image_card'] = $ds_view_mode;
+  	
+  $ds_view_mode = new stdClass();
+  $ds_view_mode->api_version = 1;
   $ds_view_mode->view_mode = 'stanford_12_col_banner_tall';
   $ds_view_mode->label = 'Banner 12 Column Tall';
   $ds_view_mode->entities = array(
