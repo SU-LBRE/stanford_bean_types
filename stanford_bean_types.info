@@ -46,7 +46,6 @@ features[ds_layout_settings][] = bean|stanford_postcard|no_image_card
 features[ds_layout_settings][] = bean|stanford_postcard|stanford_button_card
 features[ds_layout_settings][] = bean|stanford_postcard|stanford_large_card
 features[ds_layout_settings][] = bean|stanford_postcard|stanford_small_card
-features[ds_view_modes][] = no_image_card
 features[ds_view_modes][] = stanford_12_col_banner_tall
 features[features_api][] = api:2
 features[field_base][] = field_s_big_text_block_body
