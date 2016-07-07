@@ -5,7 +5,7 @@ Maintainers: [jbickar](https://github.com/jbickar), [sherakama](https://github.c
 
 [Changelog.txt](CHANGELOG.txt)
 
-This module provides default BEAN types. Contained in this feature are the Stanford Banner, Stanford Contact, Stanford Large Block, Stanford Postcard, and Stanford Social Media Connect beans. Site administrators can create any number of these Bean blocks and place them on their site.
+This module provides modifications to default BEAN types. Contained in this feature are the Stanford Banner, Stanford Contact, Stanford Large Block, Stanford Postcard, and Stanford Social Media Connect beans. Site administrators can create any number of these Bean blocks and place them on their site.
 
 **Stanford Banner**
 This bean type provides a block with the ability to create image banners. Users can add an image, credits, source information, and a caption.
