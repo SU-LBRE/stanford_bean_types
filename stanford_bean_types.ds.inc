@@ -180,13 +180,13 @@ function stanford_bean_types_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'group_button_card_style',
+        0 => 'group_button_card_styles',
         1 => 'field_s_image_info',
         2 => 'title_wrapper',
       ),
     ),
     'fields' => array(
-      'group_button_card_style' => 'ds_content',
+      'group_button_card_styles' => 'ds_content',
       'field_s_image_info' => 'ds_content',
       'title_wrapper' => 'ds_content',
     ),
