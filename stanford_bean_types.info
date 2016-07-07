@@ -83,6 +83,7 @@ features[field_base][] = field_s_testimonial_credits
 features[field_base][] = field_s_testimonial_quote
 features[field_base][] = field_testimonial_more_link
 features[field_group][] = group_button_card_link_style|bean|stanford_postcard|stanford_button_card
+features[field_group][] = group_button_card_styles|bean|stanford_postcard|stanford_button_card
 features[field_group][] = group_button_card_style|bean|stanford_postcard|stanford_button_card
 features[field_group][] = group_first_group|bean|stanford_testimonial_block|default
 features[field_group][] = group_no_image_card_style|bean|stanford_postcard|no_image_card
