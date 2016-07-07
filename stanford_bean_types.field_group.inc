@@ -44,6 +44,37 @@ function stanford_bean_types_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_button_card_styles|bean|stanford_postcard|stanford_button_card';
+  $field_group->group_name = 'group_button_card_styles';
+  $field_group->entity_type = 'bean';
+  $field_group->bundle = 'stanford_postcard';
+  $field_group->mode = 'stanford_button_card';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Button Styles',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_s_image_info',
+      1 => 'title_wrapper',
+    ),
+    'format_type' => 'link',
+    'format_settings' => array(
+      'label' => 'Button Styles',
+      'instance_settings' => array(
+        'link_to' => 'field_s_postcard_link',
+        'custom_url' => '',
+        'custom_url_normalize' => 0,
+        'target' => 'default',
+        'classes' => 'button-card',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_button_card_styles|bean|stanford_postcard|stanford_button_card'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_button_card_style|bean|stanford_postcard|stanford_button_card';
   $field_group->group_name = 'group_button_card_style';
   $field_group->entity_type = 'bean';
